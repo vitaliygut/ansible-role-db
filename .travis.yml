@@ -9,6 +9,9 @@ script:
 - ansible --version
 - molecule test
 notifications:
+  email: false
   slack:
+    on_success: change
+    on_failure: change
     rooms:
       secure: YQHjZwtXzKK0BRUbd6NY6rgEBb2t5IjueP1rjF8BNb5ku5RpLz2V6sGmqHYsPFa7ZTiILb7d4jT5fEauYkgjh36DHzH8dG7c1JI07xX7MwbEP2tj6fgf/2u3rXiE9tvqlr063zT1KKQlSRR6mLOnR/mZHCp/O646T1PTj/FG0qEB/ew+Kghf2Nc55xvEzHEhXODXin6u0V4nWwRlhaNjhRbZrSp88hhBSqsAJGNJjOCqOF6eojRYMOeTkErZ9W9DfqmHkune5j8V8K0G4wkkvB7+ibD3hzzV4eqxSbyDNVPO4BzFjJy9svmFbfi+9+ks3CilMVysC92LgmgXWMNSG2CFvVnNyzDFwQYfY+BxMHnxdYfDoIjOq+uwuQ08Hd8gMV9QrJyAiSVv+zXO2I+fKkj3uZqFI2OR4gbWQTIEEvj/G+AuM6mcrLwPACmyintQvZBYN92/u9Ddgr/2oQZP9qtYiREDlmGGSAIYXVqsAJeDyQlHiQZE2fnZNR82wjKyYEHVATVw5IIVcyhuVEphvsIEXJUqedGONJKwca7lNCHYVoSj5ik2R5GBQEnVvVy0UqJP6EXuqI+4CymM9tv50RdWUuCo9ANCxnPgq7sbHXQmShYbZ4b9WoN+Y//wWzbsxfWgOr3DPmbSBd5/MQhJcPKs91fEbGVUoB6Gf/LdMzc=
